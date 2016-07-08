@@ -6,11 +6,13 @@ import HelloHandler from './hello.js';
 
 import AddFiles from './addFiles.js';
 
+require('./css/common.less');
 let App = React.createClass({
   render() {
     return (
       <div className="nav">
         <Link to="app" className="homelink">Home  </Link>
+        <h1 id='header'>This is a header </h1>
         <Link to="hello" className="hellolink">  Say Hello</Link>
         <RouteHandler/>
 
